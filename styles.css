@@ -232,10 +232,10 @@ header .logo {
 /* /////////////////// Projects ////////////////// */
 .projects {
   background-color: #9fbccc;
-  height: 100vh;
-  padding: 0 10vw;
+  /* height: 100vh; */
+  padding: 10vh 10vw;
   display: flex;
-  gap: 5px;
+  gap: 5vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -245,7 +245,7 @@ header .logo {
   padding: 2vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 15px;
+  grid-gap: 5vh;
   overflow-y: scroll;
 }
 .projects__list::-webkit-scrollbar {
@@ -260,11 +260,15 @@ header .logo {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 .projects__heading {
   font-size: 2em;
 }
-
+.projects__link {
+  display: flex;
+  justify-content: space-between;
+}
 /* /////////////////// Contact ////////////////// */
 
 .contact {
