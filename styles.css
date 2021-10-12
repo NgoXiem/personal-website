@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Libre+Baskerville:wght@700&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -111,24 +110,23 @@ header .logo {
   grid-template-columns: 1;
   place-items: center;
 }
-.hero .hero__content {
+.hero__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-.hero .hero__heading {
+.hero__heading {
   color: #fff;
   font-size: 4.5em;
   text-align: center;
-  font-family: Dancing Script, sans-serif;
 }
-.hero .hero__info {
+.hero__info {
   text-transform: uppercase;
   font-size: 0.9em;
   letter-spacing: 1.1px;
 }
-.hero .hero__info span {
+.hero__info span {
   background-color: #fff;
   margin-bottom: 5px;
   padding: 0 5px;
@@ -232,7 +230,7 @@ header .logo {
 /* /////////////////// Projects ////////////////// */
 .projects {
   background-color: #9fbccc;
-  /* height: 100vh; */
+  height: calc(100vh + 30px);
   padding: 10vh 10vw;
   display: flex;
   gap: 5vh;
@@ -255,19 +253,38 @@ header .logo {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .project img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 5px;
+}
+.project:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 .projects__heading {
   font-size: 2em;
+  /* padding-top: 10px; */
 }
-.projects__link {
+.project__title {
+  display: none;
+}
+.project__link {
   display: flex;
   justify-content: space-between;
+  padding: 13px;
+  background-color: rgba(25, 25, 25, 0.7);
+}
+.project__info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-weight: 500;
+  color: white;
 }
 /* /////////////////// Contact ////////////////// */
 
